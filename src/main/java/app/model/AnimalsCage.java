@@ -9,6 +9,7 @@ public class AnimalsCage {
     @Autowired
     private Animal animal;
 
+
     public void whatAnimalSay() {
         System.out.println("Say:");
         System.out.println(animal.toString());
