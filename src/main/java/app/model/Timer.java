@@ -13,5 +13,7 @@ public class Timer {
         return nanoTime;
     }
 
-
+    public void setTimer() {
+        nanoTime = System.nanoTime();
+    }
 }
