@@ -4,6 +4,7 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component("timer")
+@Scope("prototype")
 public class Timer {
 
     private Long nanoTime = System.nanoTime();
@@ -11,4 +12,6 @@ public class Timer {
     public Long getTime() {
         return nanoTime;
     }
+
+
 }
